@@ -1,0 +1,641 @@
+﻿<!doctype html>
+<!--[if lte IE 8]><html class="lteie8"><![endif]-->
+<!--[if gt IE 8]><!--><html><!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <title>Ведение бухгалтерии для организаций и ИП</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" media="screen" href="./css/screen.css" >
+    <link rel="stylesheet" href="./js/fancybox/jquery.fancybox.css">
+    <!--[if lte IE 8]><script src="http://phpbbex.com/oldies/oldies.js" charset="utf-8"></script><![endif]-->
+    <script src="./js/vendor/1.11.1/jquery.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700&amp;subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+<!--<script src="//api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&amp;lang=ru-RU" type="text/javascript"></script>-->
+    <script type="text/javascript" src="./js/general.js"></script>
+    <script type="text/javascript" src="./js/jquery.validate.js"></script>
+    <script type="text/javascript" src="./js/fancybox/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="./js/jquery.mousewheel-3.0.6.pack.js"></script>
+    <script type="text/javascript" src="./js/jquery.inputmask.js"></script>
+    <!--form-->
+    <script type="text/javascript" src="./form/sand.js"></script>
+    <!--Google analytics-->
+    
+    <!--Google analytics-->
+<script>
+window.onload = function() {var options = document.getElementsByTagName("option");
+for(var i = 0; i <= options.length; i++) {
+    if(options[i] != undefined)
+        options[i].value = options[i].innerHTML;
+}}</script></head>
+<body>
+<!-- BEGIN  container-->
+<div class="container">
+    <div class="wrapper first-screen">
+        <div class="wrapper header" id="block_1">
+            <div class="inner header__inner">
+                <div class="header__logo">
+                    <a href="./" class="header__logo_a">Profit &amp; Control</a>
+                    <p class="header__logo_desc">Ведение бухгалтерии для организаций и ИП</p>
+                </div>
+                <div class="header__right-b">
+                    <p class="header__phone phone-number">+7 (499) 409-75-95</p>
+                    <p class="header__phone phone-number">+7 (495) 648-48-06</p>
+                    <a class="callback_a fancybox" href="#callback">Перезвоните мне!</a>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper banner" id="block_2">
+            <div class="inner">
+                <h1 class="banner_head">
+                    Бухгалтерия для салонов красоты, парикмахерских и медицинских центров:
+                    <span class="bold">
+                                                    Первый месяц обслуживания и помощь в организации бизнеса в подарок!
+                                            </span>
+                </h1>
+                <ul class="banner_ul">
+                    <li class="banner_li">Отчетность сдана вовремя</li>
+                    <li class="banner_li">Без штрафов</li>
+                    <li class="banner_li">Экономия на налогах</li>
+                </ul>
+                <div class="banner_form_wrap">
+                    <div class="banner_form">
+                        <h3 class="banner_form_head">Оставьте заявку<br>
+                            и получите месяц бухгалтерского обслуживания в подарок</h3>
+                        <form action="./form_action/send-form.php" id="top_form" class="form_div_horizontal" method="post">
+                            <label for="firstname2" class="form_div__label">
+                                <input type="text" name="firstname" id="firstname2" class="form_div__input required defaultInvalidName firstname" required value="" placeholder="Введите имя"/>
+                            </label>
+                            <label for="number2" class="form_div__label is-last">
+                                <input type="text" name="number" maxlength="18" id="number2" class="form_div__input required defaultInvalidNumber number" required value="" placeholder="Введите телефон"/>
+                            </label>
+                            <input type="hidden" name="utm_medium" class="input_form input_hid" value="Без utm_medium" />
+                            <input type="hidden" name="utm_source" class="input_form input_hid" value="Без utm_source" />
+                            <input type="hidden" name="utm_campaign" class="input_form input_hid" value="Без utm_campaign" />
+                            <input type="hidden" name="utm_content" class="input_form input_hid" value="Без utm_content" />
+                            <input type="hidden" name="utm_term" class="input_form input_hid" value="Без utm_term" />
+                            <input type="hidden" name="cm_title" class="input_form input_hid" value="Без cm_title" />
+                            <input type="hidden" name="position" class="input_form input_hid" value="Верхняя форма" />
+                            <input type="hidden" name="mail" class="input_form input_hid" value="" />
+                            <input type="hidden" name="email" class="input_form input_hid" value="" />
+                            <input type="submit" class="form_div__button" name="submit" value="Получить подарок!" onclick="yaCounter27046001.reachGoal('zayavka'); return true;"/>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--    <div class="wrapper savings" id="block_3">-->
+<!--        <div class="inner">-->
+<!--            <div class="savings-b_wrap">-->
+<!--                <div class="savings-b bg_1">-->
+<!--                    <div class="savings-b_icon img_1"></div>-->
+<!--                    <h3 class="savings-b_head">Экономия</h3>-->
+<!--                    <div class="savings-b_line"></div>-->
+<!--                    <p class="savings-b_p">На зарплате-->
+<!--                        штатному бухгалтеру</p>-->
+<!--                </div>-->
+<!--                <div class="savings-b bg_2 is-center">-->
+<!--                    <div class="savings-b_icon img_2"></div>-->
+<!--                    <h3 class="savings-b_head">время</h3>-->
+<!--                    <div class="savings-b_line"></div>-->
+<!--                    <p class="savings-b_p">Все время-->
+<!--                        вы посвящаете развитию бизнеса</p>-->
+<!--                </div>-->
+<!--                <div class="savings-b bg_3">-->
+<!--                    <div class="savings-b_icon img_3"></div>-->
+<!--                    <h3 class="savings-b_head">уверенность</h3>-->
+<!--                    <div class="savings-b_line"></div>-->
+<!--                    <p class="savings-b_p">Вся бухгалтерская-->
+<!--                        и налоговая отчетность сдана вовремя</p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+    <div class="wrapper tariff" id="block_4">
+        <div class="inner">
+            <h2 class="tariff_head">
+                <span class="big">Тарифные планы</span><br>
+                для бизнеса любого масштаба</h2>
+            <div class="tariff_table_wrap">
+                <div class="tariff_table_name">
+                    <div class="table_name_tr">
+                        <div class="table_name_td">Перечень
+                            выполняемых услуг</div>
+                    </div>
+                    <div class="table_name_tr">
+                        <div class="table_name_td h_2">Подготовка первичной документации</div>
+                    </div>
+                    <div class="table_name_tr">
+                        <div class="table_name_td">Расчет заработной платы</div>
+                    </div>
+                    <div class="table_name_tr">
+                        <div class="table_name_td h_2">Ведение бухгалтерского учета </div>
+                    </div>
+                    <div class="table_name_tr">
+                        <div class="table_name_td h_2">Ведение налогового учета</div>
+                    </div>
+                    <div class="table_name_tr">
+                        <div class="table_name_td h_2">Консультации по вопросам
+                            налогообложения</div>
+                    </div>
+                    <div class="table_name_tr">
+                        <div class="table_name_td h_2">Представительство в ИФНС,ПФР,ФСС</div>
+                    </div>
+                    <div class="table_name_tr">
+                        <div class="table_name_td h_2">Подготовка и сдача отчетности в ИФНС,ПФР,ФСС</div>
+                    </div>
+                    <div class="table_name_tr">
+                        <div class="table_name_td h_3">Общая стоимость</div>
+                    </div>
+                </div>
+                <div class="tariff_table_info spec">
+                    <div class="table_info_tr">
+                        <div class="table_info_td head">
+                            <div class="head_txt_wrap">
+                                <div class="head_txt">Старт</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table_info_tr">
+                        <div class="table_info_td info h_2">До 30 документов/мес</div>
+                    </div>
+                    <div class="table_info_tr">
+                        <div class="table_info_td info">До 4 человек</div>
+                    </div>
+                    <div class="table_info_tr">
+                        <div class="table_info_td info h_2"><img class="info_td_img" src="./img/info_td_img_ok.png" alt=""/></div>
+                    </div>
+                    <div class="table_info_tr">
+                        <div class="table_info_td info h_2"><img class="info_td_img" src="./img/info_td_img_ok.png" alt=""/></div>
+                    </div>
+                    <div class="table_info_tr">
+                        <div class="table_info_td info h_2"><img class="info_td_img" src="./img/info_td_img_ok.png" alt=""/></div>
+                    </div>
+                    <div class="table_info_tr">
+                        <div class="table_info_td info h_2"><img class="info_td_img" src="./img/info_td_img_ok.png" alt=""/></div>
+                    </div>
+                    <div class="table_info_tr">
+                        <div class="table_info_td info h_2">2 раза/мес</div>
+                    </div>
+                    <div class="table_info_tr">
+                        <div class="table_info_td info line_bold h_2">В полном обьеме <div class="line_bold_b"></div></div>
+                    </div>
+                    <div class="table_info_tr">
+                        <div class="table_info_td price h_3">
+                            <div class="price_p">От 5000 руб.</div>
+                            <a class="price_a fancybox js_zakaz" href="#tariff" data-name="Старт">заказать</a>
+                        </div>
+                    </div>
+                    <p class="spec_p">Спецпредложение!</p>
+                </div>
+                <div class="tariff_table_info">
+                    <div class="table_info_tr">
+                        <div class="table_info_td head">
+                            <div class="head_txt_wrap">
+                                <div class="head_txt">Комфорт</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table_info_tr">
+                        <div class="table_info_td info h_2">До 50 документов/мес</div>
+                    </div>
+                    <div class="table_info_tr">
+                        <div class="table_info_td info">5-9 человек</div>
+                    </div>
+                    <div class="table_info_tr">
+                        <div class="table_info_td info h_2"><img class="info_td_img" src="./img/info_td_img_ok.png" alt=""/></div>
+                    </div>
+                    <div class="table_info_tr">
+                        <div class="table_info_td info h_2"><img class="info_td_img" src="./img/info_td_img_ok.png" alt=""/></div>
+                    </div>
+                    <div class="table_info_tr">
+                        <div class="table_info_td info h_2"><img class="info_td_img" src="./img/info_td_img_ok.png" alt=""/></div>
+                    </div>
+                    <div class="table_info_tr">
+                        <div class="table_info_td info h_2"><img class="info_td_img" src="./img/info_td_img_ok.png" alt=""/></div>
+                    </div>
+                    <div class="table_info_tr">
+                        <div class="table_info_td info h_2">3 раза/мес</div>
+                    </div>
+                    <div class="table_info_tr">
+                        <div class="table_info_td info line_bold h_2">В полном обьеме <div class="line_bold_b"></div></div>
+                    </div>
+                    <div class="table_info_tr">
+                        <div class="table_info_td price h_3">
+                            <div class="price_p">От 15000 руб.</div>
+                            <a class="price_a fancybox js_zakaz" href="#tariff" data-name="Комфорт">заказать</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tariff_table_info is-active">
+                    <div class="table_info_tr">
+                        <div class="table_info_td head">
+                            <div class="head_txt_wrap">
+                                <div class="head_txt">Премиум</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table_info_tr">
+                        <div class="table_info_td info h_2">Свыше 50 документов/мес</div>
+                    </div>
+                    <div class="table_info_tr">
+                        <div class="table_info_td info">От 10 человек</div>
+                    </div>
+                    <div class="table_info_tr">
+                        <div class="table_info_td info h_2"><img class="info_td_img" src="./img/info_td_img_ok.png" alt=""/></div>
+                    </div>
+                    <div class="table_info_tr">
+                        <div class="table_info_td info h_2"><img class="info_td_img" src="./img/info_td_img_ok.png" alt=""/></div>
+                    </div>
+                    <div class="table_info_tr">
+                        <div class="table_info_td info h_2"><img class="info_td_img" src="./img/info_td_img_ok.png" alt=""/></div>
+                    </div>
+                    <div class="table_info_tr">
+                        <div class="table_info_td info h_2"><img class="info_td_img" src="./img/info_td_img_ok.png" alt=""/></div>
+                    </div>
+                    <div class="table_info_tr">
+                        <div class="table_info_td info h_2">5 раз/мес</div>
+                    </div>
+                    <div class="table_info_tr">
+                        <div class="table_info_td info line_bold h_2">В полном обьеме <div class="line_bold_b"></div></div>
+                    </div>
+                    <div class="table_info_tr">
+                        <div class="table_info_td price h_3">
+                            <div class="price_p">От 25000 руб.</div>
+                            <a class="price_a fancybox js_zakaz" href="#tariff" data-name="Премиум">заказать</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper bottom-form" id="block_5">
+        <div class="inner inner_bottom-form">
+            <div class="left-b">
+                <h2 class="left-b_head">Задайте свой<br> вопрос бухгалтерам<br>
+                    Profit&amp;Control</h2>
+                <div class="left-b_line"></div>
+                <p class="left-b_info">И получите понятный ответ в этот же рабочий день</p>
+            </div>
+            <form action="./form_action/send-form.php" id="central_form_1" class="form_div_vertical" method="post">
+                <h2 class="form_div__header"><span class="big">Оставьте заявку</span><br> и получите консультацию бухгалтера</h2>
+                <label for="firstname3_1" class="form_div__label">
+                    <input type="text" name="firstname" id="firstname3_1" class="form_div__input required defaultInvalidName firstname" required value="" placeholder="Введите имя"/>
+                </label>
+                <label for="number3_1" class="form_div__label is-last">
+                    <input type="text" name="number" maxlength="18" id="number3_1" class="form_div__input required defaultInvalidNumber number" required value="" placeholder="Введите телефон"/>
+                </label>
+                <input type="hidden" name="utm_medium" class="input_form" value="Без utm_medium" />
+                <input type="hidden" name="utm_source" class="input_form" value="Без utm_source" />
+                <input type="hidden" name="utm_campaign" class="input_form" value="Без utm_campaign" />
+                <input type="hidden" name="utm_content" class="input_form" value="Без utm_content" />
+                <input type="hidden" name="utm_term" class="input_form" value="Без utm_term" />
+                <input type="hidden" name="cm_title" class="input_form" value="Без cm_title" />
+                <input type="hidden" name="position" class="input_form" value="Центральная форма 1" />
+                <input type="hidden" name="mail" class="input_form" value="" />
+                <input type="hidden" name="email" class="input_form" value="" />
+                <input type="submit" class="form_div__button" name="submit" value="получить консультацию" onclick="yaCounter27046001.reachGoal('zayavka'); return true;"/>
+            </form>
+        </div>
+    </div>
+<!--    <div class="wrapper services" id="block_6">-->
+<!--        <div class="inner">-->
+<!--            <div class="services-b_wrap">-->
+<!--                <div class="services-b is-left">-->
+<!--                    <h2 class="services-b_head"><span class="head_bg">Дополнительные услуги</span></h2>-->
+<!--                    <div class="services-b_ul_wrap">-->
+<!--                        <ul class="services-b_ul">-->
+<!--                            <li class="services-b_li">Бухгалтерский аудит</li>-->
+<!--                            <li class="services-b_li">Юридические консультации</li>-->
+<!--                            <li class="services-b_li">Переписка с налоговыми органами</li>-->
+<!--                            <li class="services-b_li">Переписка с контрагентами</li>-->
+<!--                            <li class="services-b_li">Получение различных документов от госструктур</li>-->
+<!--                            <li class="services-b_li">Ведение учета внешнеэкономических операций</li>-->
+<!--                            <li class="services-b_li">Подготовка документов для камеральной проверки</li>-->
+<!--                            <li class="services-b_li">Подготовка документов для получения кредита</li>-->
+<!--                            <li class="services-b_li">Курьерские услуги</li>-->
+<!--                        </ul>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="services-b is-right">-->
+<!--                    <h2 class="services-b_head"><span class="head_bg">Разовые услуги</span></h2>-->
+<!--                    <div class="services-b_ul_wrap">-->
+<!--                        <ul class="services-b_ul">-->
+<!--                            <li class="services-b_li">Сдача нулевой отчетности</li>-->
+<!--                            <li class="services-b_li">Восстановление бухгалтерского и налогового учета и подача уточненных-->
+<!--                                налоговых деклараций и исправленных форм бух.отчетности-->
+<!--                                за прошлые периоды</li>-->
+<!--                            <li class="services-b_li">Ведение кадрового делопроизводства ( разработка кадровой-->
+<!--                                документации,прием и увольнение сотрудников,-->
+<!--                                составление справок, приказов )</li>-->
+<!--                            <li class="services-b_li">Персонифицированный учет</li>-->
+<!--                            <li class="services-b_li">Составление и оформление хозяйственных договоров </li>-->
+<!--                            <li class="services-b_li">Проведение сверки расчетов по налогам в ИФНС</li>-->
+<!--                            <li class="services-b_li">Консультирование по вопросам бух.учета</li>-->
+<!--                            <li class="services-b_li">Составление отчетности по формам клиента</li>-->
+<!--                            <li class="services-b_li">Подготовка документов для открытия расчетного счета в банке	</li>-->
+<!--                        </ul>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+    <div class="wrapper club" id="block_7">
+        <div class="inner">
+            <h2 class="club_head">Вас обслуживает<br> не один специалист,<br> а целая команда</h2>
+            <div class="club-b_wrap">
+                <div class="club-b">
+                    <div class="club-b_icon img_4"></div>
+                    <div class="club-b_info">
+                        <h3 class="info_head">Опытные бухгалтеры и юристы</h3>
+                        <div class="info_line"></div>
+                        <p class="info_p">С вами работают специалисты с опытом работы свыше 12 лет</p>
+                    </div>
+                </div>
+                <div class="club-b">
+                    <div class="club-b_icon img_2"></div>
+                    <div class="club-b_info">
+                        <h3 class="info_head">Собственная курьерская служба</h3>
+                        <div class="info_line"></div>
+                        <p class="info_p">Все вопросы доставки документов
+                            полностью наша ответственность</p>
+                    </div>
+                </div>
+                <div class="club-b">
+                    <div class="club-b_icon img_3"></div>
+                    <div class="club-b_info">
+                        <h3 class="info_head">Внутренний аудитор</h3>
+                        <div class="info_line"></div>
+                        <p class="info_p">Бухгалтерский учет ежемесячно проверяется
+                            нашим внутренним аудитором</p>
+                    </div>
+                </div>
+                <div class="club-b is-last">
+                    <div class="club-b_icon img_1"></div>
+                    <div class="club-b_info">
+                        <h3 class="info_head">Личный бухгалтер</h3>
+                        <div class="info_line"></div>
+                        <p class="info_p">Который всё объяснит, поможет безопасно снизить налоги и сдаст отчетность вовремя</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper range" id="block_8">
+        <div class="inner">
+            <h2 class="range_head">Мы выполним любую бухгалтерскую работу за вас <!--<span class="small">для вашего бизнеса</span>--></h2>
+            <div class="range-b_wrap">
+                <div class="range-b">
+                    <div class="range-b_num">.01</div>
+                    <p class="range-b_p">Ведение и оптимизация бухгалтерского
+                        и налогового учета</p>
+                    <p class="range-b_price">от 4990 руб</p>
+                </div>
+                <div class="range-b is-center">
+                    <div class="range-b_num">.02</div>
+                    <p class="range-b_p">Ведение кадрового делопроизводства</p>
+                    <p class="range-b_price">от 1990 руб/мес</p>
+                </div>
+                <div class="range-b">
+                    <div class="range-b_num">.03</div>
+                    <p class="range-b_p">Восстановление бухгалтерского учета</p>
+                    <p class="range-b_price">от 4990 руб/мес</p>
+                </div>
+                <div class="range-b is-bottom">
+                    <div class="range-b_num">.04</div>
+                    <p class="range-b_p">Сдача отчетности
+                        в контролирующие органы</p>
+                    <p class="range-b_price">от 1990 руб/квартал</p>
+                </div>
+                <div class="range-b is-center is-bottom">
+                    <div class="range-b_num">.05</div>
+                    <p class="range-b_p">Абонентское консультирование
+                        по бухгалтерскому учету
+                        и налогообложению</p>
+                    <p class="range-b_price">от 1490 руб/час</p>
+                </div>
+                <div class="range-b is-bottom">
+                    <div class="range-b_num">.06</div>
+                    <p class="range-b_p">Автоматизация учета
+                        на основе 1С</p>
+                    <p class="range-b_price">от 1990 руб/мес</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper central-form" id="block_9">
+        <div class="inner inner_central-form">
+            <div class="left-b">
+                <h2 class="left-b_head">Не нашли нужную<br> вам услугу?</h2>
+                <div class="left-b_line"></div>
+                <p class="left-b_info">Оставьте заявку и наш специалист<br> бесплатно проконсультирует вас</p>
+            </div>
+            <form action="./form_action/send-form.php" id="central_form_2" class="form_div_vertical" method="post">
+                <h2 class="form_div__header"><span class="big">Оставьте заявку</span><br> и получите консультацию бухгалтера</h2>
+                <label for="firstname3_2" class="form_div__label">
+                    <input type="text" name="firstname" id="firstname3_2" class="form_div__input required defaultInvalidName firstname" required value="" placeholder="Введите имя"/>
+                </label>
+                <label for="number3_2" class="form_div__label is-last">
+                    <input type="text" name="number" maxlength="18" id="number3_2" class="form_div__input required defaultInvalidNumber number" required value="" placeholder="Введите телефон"/>
+                </label>
+                <input type="hidden" name="utm_medium" class="input_form" value="Без utm_medium" />
+                <input type="hidden" name="utm_source" class="input_form" value="Без utm_source" />
+                <input type="hidden" name="utm_campaign" class="input_form" value="Без utm_campaign" />
+                <input type="hidden" name="utm_content" class="input_form" value="Без utm_content" />
+                <input type="hidden" name="utm_term" class="input_form" value="Без utm_term" />
+                <input type="hidden" name="cm_title" class="input_form" value="Без cm_title" />
+                <input type="hidden" name="position" class="input_form" value="Центральная форма 2" />
+                <input type="hidden" name="mail" class="input_form" value="" />
+                <input type="hidden" name="email" class="input_form" value="" />
+                <input type="submit" class="form_div__button" name="submit" value="получить консультацию" onclick="yaCounter27046001.reachGoal('zayavka'); return true;"/>
+            </form>
+        </div>
+    </div>
+    <div class="wrapper scheme" id="block_10">
+        <div class="inner">
+            <h2 class="scheme_head">Простая схема работы</h2>
+            <div class="scheme-b_wrap">
+                <div class="scheme-b b_1 is-bottom">
+                    <img class="scheme-b_img" src="./img/scheme-b_img_1.png" alt=""/>
+                    <p class="scheme-b_p">Получение<br>
+                        первичной<br>
+                        документации</p>
+                </div>
+                <div class="scheme-b b_2 is-top">
+                    <img class="scheme-b_img" src="./img/scheme-b_img_2.png" alt=""/>
+                    <p class="scheme-b_p">Ввод данных<br>
+                        в 1С 8</p>
+                </div>
+                <div class="scheme-b b_3 is-bottom">
+                    <img class="scheme-b_img" src="./img/scheme-b_img_3.png" alt=""/>
+                    <p class="scheme-b_p">Оптимизация<br> бухгалтерии<br>
+                        и подсчет налогов</p>
+                </div>
+                <div class="scheme-b b_4 is-top">
+                    <img class="scheme-b_img" src="./img/scheme-b_img_4.png" alt=""/>
+                    <p class="scheme-b_p">Подготовка<br> бухгалтерской<br>
+                        и налоговой<br> отчетности</p>
+                </div>
+                <div class="scheme-b b_5 is-bottom">
+                    <img class="scheme-b_img" src="./img/scheme-b_img_5.png" alt=""/>
+                    <p class="scheme-b_p">Проверка<br>
+                        отчетности<br> внутренним<br> аудитором</p>
+                </div>
+                <div class="scheme-b b_6 is-top">
+                    <img class="scheme-b_img" src="./img/scheme-b_img_6.png" alt=""/>
+                    <p class="scheme-b_p">Сдача отчетности<br>
+                        в ИФНС, фонды,<br> органы статистики</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper get" id="block_11">
+        <div class="inner">
+            <h2 class="get_head"><span class="big">Вы получаете гарантии,</span><br>закрепленные в официальном договоре</h2>
+            <div class="get-b_wrap">
+                <div class="get-b">
+                    <div class="get-b_icon img_1"></div>
+                    <div class="get-b_info">
+                        <h3 class="info_head">Гарантия результата</h3>
+                        <div class="info_line"></div>
+                        <p class="info_p">Мы гарантируем грамотное ведение бухгалтерского и налогового учёта, своевременную
+                            подготовку и сдачу отчетности, а также высокий уровень сервисного обслуживания.</p>
+                    </div>
+                </div>
+                <div class="get-b">
+                    <div class="get-b_icon img_2"></div>
+                    <div class="get-b_info">
+                        <h3 class="info_head">Гарантия конфиденциальности</h3>
+                        <div class="info_line"></div>
+                        <p class="info_p">Мы гарантируем конфиденциальность. Информация о вашей компании не передается
+                            третьим лицам, включая налоговые органы. Любые операции с данными согласовываются
+                            с руководством компании. </p>
+                    </div>
+                </div>
+                <div class="get-b is-last">
+                    <div class="get-b_icon img_3"></div>
+                    <div class="get-b_info">
+                        <h3 class="info_head">Гарантия официальной работы</h3>
+                        <div class="info_line"></div>
+                        <p class="info_p">Мы заключаем официальный договор, по которому мы обязуемся компенсировать все штрафы
+                            в случае ошибочного ведения бухучёта, в т.ч. штрафы, начисленные налоговой инспекций
+                            за несвоевременное предоставление деклараций, некорректно
+                            указанных сумм налогов и т.д. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper map" id="block_12">
+        <div id="map"></div>
+        <div class="inner inner_map">
+            <div class="map_address">
+                <h2 class="map_address_head">Наш офис</h2>
+                <div class="map_address_info">
+                    <p class="info_head">Наш адрес:</p>
+                    <p class="info_txt">119415 Москва, проспект Вернадского, дом 39, офис 509</p>
+                </div>
+                <div class="map_address_info">
+                    <p class="info_head">Телефоны:</p>
+                    <p class="info_txt phone-number">+7 (499) 409-75-95</p>
+                    <p class="info_txt phone-number">+7 (495) 648-48-06</p>
+                </div>
+                <div class="map_address_info">
+                    <p class="info_head">E-mail:</p>
+                    <p class="info_txt">info@profitcontrol.ru</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper bottom-form" id="block_13">
+        <div class="inner inner_bottom-form">
+            <div class="left-b">
+                <h2 class="left-b_head">Остались вопросы?</h2>
+                <div class="left-b_line"></div>
+                <p class="left-b_info">Оставьте заявку и наш специалист<br> бесплатно проконсультирует вас</p>
+            </div>
+            <form action="./form_action/send-form.php" id="bottom_form" class="form_div_vertical" method="post">
+                <h2 class="form_div__header"><span class="big">Оставьте заявку</span><br> и получите консультацию бухгалтера</h2>
+                <label for="firstname4" class="form_div__label">
+                    <input type="text" name="firstname" id="firstname4" class="form_div__input required defaultInvalidName firstname" required value="" placeholder="Введите имя"/>
+                </label>
+                <label for="number4" class="form_div__label is-last">
+                    <input type="text" name="number" maxlength="18" id="number4" class="form_div__input required defaultInvalidNumber number" required value="" placeholder="Введите телефон"/>
+                </label>
+                <input type="hidden" name="utm_medium" class="input_form" value="Без utm_medium" />
+                <input type="hidden" name="utm_source" class="input_form" value="Без utm_source" />
+                <input type="hidden" name="utm_campaign" class="input_form" value="Без utm_campaign" />
+                <input type="hidden" name="utm_content" class="input_form" value="Без utm_content" />
+                <input type="hidden" name="utm_term" class="input_form" value="Без utm_term" />
+                <input type="hidden" name="cm_title" class="input_form" value="Без cm_title" />
+                <input type="hidden" name="position" class="input_form" value="Нижняя форма" />
+                <input type="hidden" name="mail" class="input_form" value="" />
+                <input type="hidden" name="email" class="input_form" value="" />
+                <input type="submit" class="form_div__button" name="submit" value="получить консультацию" onclick="yaCounter27046001.reachGoal('zayavka'); return true;"/>
+            </form>
+        </div>
+    </div>
+    <div class="wrapper footer" id="block_14">
+        <div class="inner footer__inner">
+            <div class="footer__privacy">
+                <a class="footer__privacy_a fancybox" href="#privacy">Политика конфиденциальности</a>
+            </div>
+        </div>
+    </div>
+</div>
+<form action="./form_action/send-form.php" id="callback" class="form_div_vertical" method="post">
+    <h2 class="form_div__header"><span class="big">Оставьте заявку</span><br> на обратный звонок</h2>
+    <label for="firstname0" class="form_div__label">
+        <input type="text" name="firstname" id="firstname0" class="form_div__input required defaultInvalidName firstname" required value="" placeholder="Введите имя"/>
+    </label>
+    <label for="number0" class="form_div__label is-last">
+        <input type="text" name="number" maxlength="18" id="number0" class="form_div__input required defaultInvalidNumber number" required value="" placeholder="Введите телефон"/>
+    </label>
+    <input type="hidden" name="utm_medium" class="input_form" value="Без utm_medium" />
+    <input type="hidden" name="utm_source" class="input_form" value="Без utm_source" />
+    <input type="hidden" name="utm_campaign" class="input_form" value="Без utm_campaign" />
+    <input type="hidden" name="utm_content" class="input_form" value="Без utm_content" />
+    <input type="hidden" name="utm_term" class="input_form" value="Без utm_term" />
+    <input type="hidden" name="cm_title" class="input_form" value="Без cm_title" />
+    <input type="hidden" name="position" class="input_form" value="Обратный звонок" />
+    <input type="hidden" name="mail" class="input_form" value="" />
+    <input type="hidden" name="email" class="input_form" value="" />
+    <input type="submit" class="form_div__button" name="submit" value="заказать звонок" onclick="yaCounter27046001.reachGoal('zayavka'); return true;"/>
+</form>
+<form action="./form_action/send-form-tariff.php" id="tariff" class="form_div_vertical" method="post">
+    <h2 class="form_div__header"><span class="big">Оставьте заявку</span><br> на тарифный план  <span id="tariff_head"></span></h2>
+    <label for="firstname1" class="form_div__label">
+        <input type="text" name="firstname" id="firstname1" class="form_div__input required defaultInvalidName firstname" required value="" placeholder="Введите имя"/>
+    </label>
+    <label for="number1" class="form_div__label is-last">
+        <input type="text" name="number" maxlength="18" id="number1" class="form_div__input required defaultInvalidNumber number" required value="" placeholder="Введите телефон"/>
+    </label>
+    <input type="hidden" name="utm_medium" class="input_form" value="Без utm_medium" />
+    <input type="hidden" name="utm_source" class="input_form" value="Без utm_source" />
+    <input type="hidden" name="utm_campaign" class="input_form" value="Без utm_campaign" />
+    <input type="hidden" name="utm_content" class="input_form" value="Без utm_content" />
+    <input type="hidden" name="utm_term" class="input_form" value="Без utm_term" />
+    <input type="hidden" name="cm_title" class="input_form" value="Без cm_title" />
+    <input type="hidden" name="position" class="input_form" value="Тарифный план" />
+    <input type="hidden" name="tariff" class="input_form tariff" value="" />
+    <input type="hidden" name="mail" class="input_form" value="" />
+    <input type="hidden" name="email" class="input_form" value="" />
+    <input type="submit" class="form_div__button" name="submit" value="оставить заявку" onclick="yaCounter27046001.reachGoal('zayavka'); return true;"/>
+</form>
+<div class="privacy-policy_div" id="privacy">
+    <p class="privacy_p">Сайт уважает и соблюдает законодательство РФ. Также мы уважаем Ваше право и соблюдаем конфиденциальность при заполнении, передаче и хранении ваших конфиденциальных сведений.</p>
+    <p class="privacy_p">Мы запрашиваем Ваши персональные данные исключительно для информирования об оказываемых услугах сайта.</p>
+    <p class="privacy_p">Персональные данные - это информация, относящаяся к субъекту персональных данных, то есть, к потенциальному покупателю. В частности, это фамилия, имя и отчество, дата рождения, адрес, контактные реквизиты (телефон, адрес электронной почты), семейное, имущественное положение и иные данные, относимые Федеральным законом от 27 июля 2006 года № 152-ФЗ «О персональных данных» (далее – «Закон») к категории персональных данных.</p>
+    <p class="privacy_p">Если Вы разместили Ваши контактные данных на сайте, то Вы автоматически согласились на обработку данных и дальнейшую передачу Ваших контактных данных менеджерам нашего сайта.</p>
+    <p class="privacy_p">В случае отзыва согласия на обработку своих персональных данных мы обязуемся удалить Ваши персональные данные в срок не позднее 3 рабочих дней.</p>
+</div>
+
+
+
+<!-- BEGIN JIVOSITE CODE {literal} -->
+
+<!-- {/literal} END JIVOSITE CODE -->
+</body>
+</html>
